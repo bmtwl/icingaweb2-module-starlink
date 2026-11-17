@@ -6,6 +6,7 @@ use Icinga\Module\Director\Hook\ImportSourceHook;
 use Icinga\Module\Director\Web\Form\QuickForm;
 use Icinga\Module\Starlink\Db;
 use Icinga\Module\Starlink\Format;
+use Icinga\Module\Starlink\Location;
 
 /**
  * Terminals known from telemetry. Role (failover/primary) is intentionally
