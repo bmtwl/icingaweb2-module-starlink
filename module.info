@@ -1,0 +1,10 @@
+Name: Starlink
+Version: 0.1.0
+Requires:
+  Libraries: icinga-php-library (>=0.14.0), icinga-php-thirdparty (>=0.12.0)
+  Modules: map
+Description: Starlink enterprise telemetry for Icinga
+ Collects the Starlink Public API v2 telemetry stream into PostgreSQL via a
+ background daemon, provides a terminal browser for site techs, a Director
+ import source and a DB-backed check command (failover activity detection
+ and bandwidth perfdata).

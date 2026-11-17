@@ -1,0 +1,20 @@
+[Unit]
+Description=Icinga Starlink telemetry collector
+Wants=network-online.target postgresql.service
+After=network-online.target postgresql.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/icingacli starlink daemon run
+; ExecStart=/usr/bin/icingacli starlink daemon run --verbose
+User=icinga-starlink
+Group=icingaweb2
+Restart=always
+RestartSec=15
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
